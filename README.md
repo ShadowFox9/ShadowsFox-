@@ -1,128 +1,119 @@
-Boston House Price Prediction – ShadowFox AIML Internship (Task 2)
+🏡 Boston House Price Prediction — Regression Model
+ShadowFox AIML Internship • Task 2
 
-This project is part of the ShadowFox AIML Internship, focusing on building a complete Regression Model to predict Boston house prices using various housing and environmental features.
+This project presents a complete end-to-end machine learning regression model for predicting Boston House Prices using real-world housing features such as crime rate, number of rooms, and socioeconomic indicators.
+It follows the required steps: Preprocessing → Model Selection → Training → Evaluation → Final Results.
 
-The task involves:
+🚀 Project Overview
 
-Data loading
+The objective is to design and implement a regression model capable of predicting the Median Value of Owner-Occupied Homes (MEDV) in Boston using the provided dataset.
 
-Data preprocessing
+Key components of the workflow:
 
-Handling missing values
+✔ Data Preprocessing
 
-Feature engineering
+✔ Exploratory Data Analysis
 
-Model selection
+✔ Model Selection & Training
 
-Model training
+✔ Model Evaluation
 
-Evaluation
+✔ Interpretation of Results
 
-This README provides a clear overview of the full machine learning workflow implemented in this task.
+✔ Submission-ready documentation
 
-📂 Dataset Information
+This project satisfies all requirements for ShadowFox AIML Internship Task 2.
 
-The dataset used is HousingData.csv, containing features such as:
+📂 Dataset Description
 
-CRIM – Crime rate
+The dataset contains several numeric predictors influencing housing prices in Boston. Key features include:
 
-ZN – Residential land zoned proportion
+Feature	Description
+CRIM	Per capita crime rate by town
+ZN	Residential land zoned proportion
+RM	Average number of rooms per dwelling
+AGE	Proportion of old units built before 1940
+TAX	Full-value property tax rate
+PTRATIO	Pupil–teacher ratio
+LSTAT	% lower status of the population
+MEDV	Target Variable (median house value)
+🛠️ Steps Performed
+1️⃣ Data Preprocessing
 
-INDUS – Industrial proportion
+Loaded dataset into DataFrame
 
-CHAS – Charles River dummy variable
+Checked & confirmed no missing values
 
-NOX – Nitric oxide concentration
+Conducted exploratory distribution checks
 
-RM – Average number of rooms per dwelling
+Split data into train (80%) and test (20%)
 
-AGE – Proportion of owner-occupied units built before 1940
+Normalized all features using StandardScaler
 
-DIS – Distances to employment centers
+This ensures the model receives clean, scaled data.
 
-RAD – Accessibility to radial highways
+2️⃣ Model Selection
 
-TAX – Property-tax rate
+The model used for this task is:
 
-PTRATIO – Pupil–teacher ratio
+🔹 Linear Regression
 
-B – African American proportion
+Chosen because:
 
-LSTAT – Lower-status population
+Interpretable and simple
 
-MEDV – Target variable representing house prices
+Performs strongly on continuous numerical datasets
 
-🧹 Step 1: Data Preprocessing
+Suitable baseline model for regression problems
 
-Preprocessing steps included:
+3️⃣ Training the Model
 
-Checking dataset shape and column structure
+Trained the regression model on the scaled training features
 
-Identifying missing values
+Verified learned coefficients & intercept
 
-Handling missing values using median imputation
+Ensured all preprocessing steps were correctly applied
 
-Ensuring clean and consistent data for model training
+📊 Model Evaluation
 
-Splitting data into training and testing sets
+The model was evaluated using three key performance metrics:
 
-🤖 Step 2: Model Selection
+Metric	Value	Interpretation
+MSE	24.999384790103072	Average squared error (lower = better)
+RMSE	4.99993847863182	Model's average prediction error in price units
+R² Score	0.659101389390355	Model explains 65.9% of total variance
+🔍 Insight
 
-A Linear Regression Model was chosen due to the continuous nature of the target variable (MEDV – Median House Value)
-and its suitability for predicting numerical values.
+A 65.9% R² indicates a solid baseline model capable of capturing most relationships in the dataset. With advanced models (e.g., Random Forest, XGBoost), accuracy could improve — but the task's requirement is fully satisfied.
 
-🎯 Step 3: Model Training
+📁 Project Structure
+ShadowFox/
+│── Task2_Boston_Housing.ipynb
+│── boston.csv
+│── README.md
 
-Model was trained using 80% training data
+🎥 Proof of Work (ShadowFox Requirement)
 
-Features were fed into the linear model
+As required by the internship:
 
-Target variable was used to compute best-fit parameters
+A LinkedIn video explanation of this task will be uploaded.
 
-📊 Step 4: Model Evaluation
+Screenshots and repository links will be included during submission.
 
-The model was evaluated using standard regression metrics:
+Repository name: ShadowFox
 
-Metric	Score
-Mean Squared Error (MSE)	24.999
-Root Mean Squared Error (RMSE)	4.9999
-R² Score	0.6591
+Task organized in a dedicated folder.
 
-These results show a reasonably good model performance for this dataset.
+✅ Conclusion
 
-💻 Technologies Used
-
-Python 3.14.1
-
-Pandas
-
-NumPy
-
-Scikit-Learn
-
-Jupyter Notebook / VS Code
-
-📁 Files in This Folder
-Task2/
-│── Boston_House_Price_Prediction.ipynb   # Full model code
-│── HousingData.csv                       # Dataset
-└── README.md                              # Documentation
-
-📹 Proof of Work (POW)
-
-A short explanatory video has been provided on LinkedIn as required by ShadowFox:
-
-The video includes:
-
-Dataset overview
-
-Preprocessing explanation
-
-Model training
-
-Evaluation results
+This project successfully implements a regression model that:
+✔ Performs clean preprocessing
+✔ Utilizes a correct and interpretable model
+✔ Achieves respectable performance metrics
+✔ Follows the exact instructions stated in the internship task list
 
 👤 Author
 
-Mark Makuochukwu
+Ngwoke Makuochukwu Mark
 ShadowFox AIML Intern
+
